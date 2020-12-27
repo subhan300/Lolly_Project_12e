@@ -39,7 +39,7 @@ function Error({location}) {
     return (
         <div>
             <h1>HERE IS YOUR CARD </h1>
-            <h1>LINK : https://brave-colden-8e28fe.netlify.app/{D.lollyPath}</h1>
+            <h1>LINK : https://brave-colden-8e28fe.netlify.app/lollies/{D.lollyPath}</h1>
 
             <div>
     <h1>{D.recipientName}</h1>
