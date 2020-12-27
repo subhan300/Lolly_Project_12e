@@ -89,10 +89,10 @@ const resolvers = {
       axios
         .post("https://api.netlify.com/build_hooks/5fe8d04dee5a2ff961f7a91c")
         .then(function (response) {
-          console.log(response)
+          console.log(response,"show me what is a respone ghere plx")
         })
         .catch(function (error) {
-          console.error(error)
+          console.error(error,"show me where is error")
         })
 
       console.log(result)
