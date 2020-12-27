@@ -12,6 +12,7 @@ var client = new faunadb.Client({
 const typeDefs = gql`
   type Query {
     getAllLollies:[Lolly]
+    getLollyByPath(lollyPath: String!):Lolly
 
   }
   type Lolly {
@@ -63,18 +64,21 @@ const resolvers = {
      
   
     },
+    getLollyByPath: async (_, args) => {
+      console.log(args,"args has arrive in lollypath")
+      try {
+        var result = await client.query(
+          q.Get(q.Match(q.Index("Lolly_by_path"),args.lollyPath))
+        )
 
-    // getLollyByPath: async (_, args) => {
-    //   try {
-    //     var result = await client.query(
-    //       q.Get(q.Match(q.Index("Lolly_by_path"), args.lollyPath))
-    //     )
+        console.log(result,"reuslt arrive ")
 
-    //     return result.data
-    //   } catch (e) {
-    //     return e.toString()
-    //   }
-    // },
+        return result.data
+      } catch (e) {
+        console.log(e,"error catch mai aya ")
+        return e.toString()
+      }
+    },
   },
 
   Mutation: {
