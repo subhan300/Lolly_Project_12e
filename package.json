@@ -14,9 +14,17 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "babel-preset-react-app": "^10.0.0",
+    "faunadb": "^3.0.1",
+    "formik": "^2.2.1",
     "gatsby": "^2.26.1",
+    "gatsby-source-graphql": "^2.7.6",
+    "netlify-cli": "^2.67.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "shortid": "^2.2.16",
+    "yup": "^0.29.3"
   },
   "devDependencies": {
     "prettier": "2.2.1"
