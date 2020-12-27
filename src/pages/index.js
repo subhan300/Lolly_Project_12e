@@ -115,7 +115,7 @@ console.log(data,"daata")
 <input type="color" value={c1} onChange={(e)=>setC1(e.target.value)}></input>
 <input type="color" value={c2} onChange={(e)=>setC2(e.target.value)}></input>
 <input type="color" value={c3} onChange={(e)=>setC3(e.target.value)}></input>
-<button onClick={()=>OnSubmit()}>ON SUBMIT</button>
+
 </div>
 
 
@@ -138,7 +138,7 @@ height:"420px"}}>
 <div style={{marginTop:"20px",textAlign:"center"}}>  
 <input placeholder="add link " ref={Link}></input></div>
 <div style={{marginTop:"20px",textAlign:"center"}}>
-
+<button onClick={()=>OnSubmit()}>ON SUBMIT</button>
 </div>
 </div>
 
